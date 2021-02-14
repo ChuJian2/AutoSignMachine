@@ -374,7 +374,7 @@ var producGame = {
         console.log('剩余未完成game', games.length)
         let queue = new PQueue({ concurrency: 2 });
 
-        console.log('调度任务中', '并发数', 2)
+        console.log('调度任务中', '并发数', 30)
         for (let game of games) {
             queue.add(async () => {
                 console.log(game.name)
@@ -416,7 +416,7 @@ var producGame = {
         console.log('剩余未完成game', games.length)
         let queue = new PQueue({ concurrency: 2 });
 
-        console.log('调度任务中', '并发数', 2)
+        console.log('调度任务中', '并发数', 30)
         for (let game of games) {
             queue.add(async () => {
                 console.log(game.name)
