@@ -74,3 +74,16 @@ jobs:
         password2: ${{secrets.unicom_password}}
         appid: ${{secrets.unicom_appid}}
       run: node index.js unicom --accountSn=1,2 --user-1=${user} --password-1=${password} --appid-1=${appid} --user-2=${user2} --password-2=${password} --appid-2=${appid}
+      
+    #  运行 unicom 签到任务，三账号版本，user修改user1
+    #- name: Run unicom daily task
+    #  env:
+    #    user1: ${{secrets.unicom_user1}}
+    #    password1: ${{secrets.unicom_password1}}
+    #    user2: ${{secrets.unicom_user2}}
+    #    password2: ${{secrets.unicom_password2}}
+    #    user3: ${{secrets.unicom_user3}}
+    #    password3: ${{secrets.unicom_password3}}
+    #    appid: ${{secrets.unicom_appid}}
+    #  run: node index.js unicom --accountSn=1,2,3 --user-1=${user1} --password-1=${password1} --appid-1=${appid} --user-2=${user2} --password-2=${password2} --appid-2=${appid} --user-3=${user3} --password-3=${password3} --appid-3=${appid}
+
